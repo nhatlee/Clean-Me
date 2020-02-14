@@ -13,7 +13,7 @@ class ProgressView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
-        if(InterfaceStyle().rawValue == "Dark"){
+        if(InterfaceStyle() == .Dark){
             self.alphaValue = 1.0
         } else {
             self.alphaValue = 0.7

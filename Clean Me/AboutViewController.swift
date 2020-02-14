@@ -22,7 +22,7 @@ class AboutViewController: NSViewController {
     override func awakeFromNib() {
         if self.view.layer != nil {
             var color : CGColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            if(InterfaceStyle().rawValue == "Dark"){
+            if(InterfaceStyle() == .Dark){
                 color = CGColor(red: 42/255.0, green: 41/255.0, blue: 41/255.0, alpha: 1.0)
             }
             self.view.layer?.backgroundColor = color
